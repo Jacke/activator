@@ -179,7 +179,12 @@ object Application extends Controller {
       app.config.id,
       Platform.getClientFriendlyFilename(app.config.location),
       // TODO - These should be drawn from the template itself...
-      Seq("plugins/home/home", "plugins/code/code", "plugins/compile/compile", "plugins/test/test", "plugins/run/run"),
+      Seq("plugins/home/home",
+        "plugins/code/code",
+        "plugins/compile/compile",
+        "plugins/test/test",
+        "plugins/run/run",
+        "plugins/console/console"),
       app.config.cachedName getOrElse app.config.id,
       // TODO - something less lame than exception here...
       app.templateID,

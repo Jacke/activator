@@ -47,3 +47,6 @@ GET         /home/stream                                 controllers.Application
 GET         /public/*file                                controllers.Assets.at(path="/public", file)
 GET         /webjars/requirejs-loader.js                 controllers.WebJarAssets.requirejs
 GET         /webjars/*file                               controllers.WebJarAssets.at(file)
+
+# Console
+GET         /api/console/:id                             controllers.api.Console.handle(id)

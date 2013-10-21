@@ -18,11 +18,14 @@
 	</nav>
 	<h1><a href="#" data-bind="click: openInFileBrowser, text: rootAppPath, attr: { title: rootAppPath }"></a></h1>
 	<div class="breadcrumb subheader">
-		<a href="#code/" class="home">⌂</a>
+		<a href="#code" class="home">⌂</a>
 		<p class="wrap" data-bind="foreach: parts">
 			<span class="slash">/</span><a href="#" data-bind="text: name, attr: { href: url }"></a>
 		</p>
 	</div>
+    <div class="breadcrumb subheader">
+        <a href="#console" class="home">⌂</a>
+    </div>
 </header>
 <p style="display:none" data-bind="visible: isEmpty">Empty folder</p>
 <ul class="list directory" data-bind="foreach: files">
